@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Share Lens</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Trending Today</h2>
+  <ion-card *ngFor="let item of items">
+  <img src="{{'https://farm'+ item.farm + '.staticflickr.com/' + item.server+ '/' + item.id + '_' + item.secret + '_n.jpg'}}"/>
+  <ion-card-content>
+    <ion-card-title>
+       {{item.title}}
+      </ion-card-title>
+  </ion-card-content>
+</ion-card>
+</ion-content>
