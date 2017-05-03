@@ -14,7 +14,7 @@ export class HomePage {
   }
   ngOnInit(){
     this.getImages();
-    console.log('oninit fired...')
+
   }
 
   getImages(){
@@ -22,6 +22,7 @@ export class HomePage {
       this.items = response.photos.photo
       console.log('items', response.photos.photo);
     })
+    // .then(this.flickrService.getAuthor(this.items.bla).subscribe( bla bla))
   }
 
 }

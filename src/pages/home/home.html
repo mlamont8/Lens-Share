@@ -5,7 +5,6 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Trending Today</h2>
   <ion-card *ngFor="let item of items">
   <img src="{{'https://farm'+ item.farm + '.staticflickr.com/' + item.server+ '/' + item.id + '_' + item.secret + '_n.jpg'}}"/>
   <ion-card-content>

@@ -19,6 +19,7 @@ export class FlickrService{
     this.method = 'flickr.interestingness.getList'
     return this.http.get(this.baseUrl+this.method+this.endUrl)
       .map(res => res.json());
+
   }
 
 }
