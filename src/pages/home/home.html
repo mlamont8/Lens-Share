@@ -5,12 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngFor="let item of items">
+  <ion-card *ngFor="let item of items; let i = index" (click)="openPhoto(i)">
+    {{item.title}}
   <img src="{{'https://farm'+ item.farm + '.staticflickr.com/' + item.server+ '/' + item.id + '_' + item.secret + '_n.jpg'}}"/>
-  <ion-card-content>
-    <ion-card-title>
-       {{item.title}}
-      </ion-card-title>
-  </ion-card-content>
 </ion-card>
-</ion-content>
