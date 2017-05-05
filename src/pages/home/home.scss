@@ -1,16 +1,26 @@
+@font-face {
+font-family: TitleFont;
+src: url("../assets/fonts/DancingScript/DancingScript-Bold.ttf");
+}
+
+ion-title {
+  font-family: 'TitleFont';
+
+}
+
+.toolbar-title .toolbar-title-md {
+  color: '#ffffff';
+}
+
 page-home {
-  ion-card img{
-  width: 100vw;
-  //margin-right:  -10px;
-}
 
-.card-md{
-  margin: 10px 0 10px 0;
-}
+  .homeImage {
+    width: 100vw;
+    margin: 10px 0 20px 0;
+  }
 
-.homeImage {
-  width: 100vw;
-  margin-bottom: 20px;
-}
+  .homeTitle {
+    padding: 10px 0 0 10px;
+  }
 
 }

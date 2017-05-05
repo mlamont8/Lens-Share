@@ -1,17 +1,13 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Share Lens</ion-title>
+  <ion-navbar>
+    <ion-title text-center>ShareLens</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <!-- <ion-card *ngFor="let item of items; let i = index" (click)="openPhoto(i)">
-    {{item.title}}
-  <img src="{{'https://farm'+ item.farm + '.staticflickr.com/' + item.server+ '/' + item.id + '_' + item.secret + '_n.jpg'}}"/>
-</ion-card> -->
 
-<div *ngFor="let item of items; let i = index" (click)="openPhoto(i)">
-  <div class="title"> {{item.title}}</div>
+<div *ngFor="let item of items; let i = index" (click)="openPhoto({id:item.id})">
+  <div class="homeTitle"> {{item.title}}</div>
   <img class="homeImage" src="{{'https://farm'+ item.farm + '.staticflickr.com/' + item.server+ '/' + item.id + '_' + item.secret + '_n.jpg'}}"/>
 
 </div>
